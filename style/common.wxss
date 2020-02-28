@@ -1,0 +1,16 @@
+view{
+    height: 200rpx;
+    font-size: 40rpx;
+    background-color: aqua;
+    width: calc(750rpx * 100 / 375);
+  }
+
+  #txt{
+      font-size: 30px;
+      color: yellow;
+  }
+
+  .txt{
+      font-size: 30px;
+      color: yellow;
+  }

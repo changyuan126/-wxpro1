@@ -1,0 +1,30 @@
+<input type="text" bindinput="handleInput" data-item="99" data-num="33"/>
+<view>
+  输入值值：
+  <view>{{num}}</view>
+  <button bindtap="handleTap" size="mini" type="warn" data-operaction="{{1}}">+</button>
+  <button bindtap="handleTap" size="mini" type="warn" data-operaction="{{-1}}">-</button>
+</view>
+--radio
+<view>
+  <radio-group bindchange="handleChange">
+    <radio value="male" color="red">男</radio>
+    <radio value="female" color="red">女</radio>
+  </radio-group>
+  <view>您选中的值：{{gender}}</view>
+</view>
+--checkbox
+<view>
+<checkbox-group bindchange="handleCkChange">
+   <checkbox wx:for="{{ckList}}" wx:key="id" value="{{item.value}}">{{item.name}}</checkbox>
+</checkbox-group>
+  <view>您选中的值：{{checkedList}}</view>
+</view>
+--button扩展
+<view><button open-type="contact" size="mini"  type="warn">contact</button></view>
+<view><button open-type="share" size="mini"  type="warn">share</button></view>
+<view><button open-type="getPhoneNumber" size="mini"  type="warn" bindgetphonenumber="getPhoneNumber">getPhoneNumber</button></view>
+<view><button open-type="getUserInfo" size="mini" type="warn"  bindgetuserinfo="getUserInfo">getUserInfo</button></view>
+<view><button open-type="launchApp" size="mini" type="warn">launchApp</button></view>
+<view><button open-type="openSettting" size="mini" type="warn">openSettting</button></view>
+<view><button open-type="feedback" size="mini"  type="warn">feedback</button></view>

@@ -1,0 +1,9 @@
+<view>
+ rpx
+</view>
+<text id="txt">
+    test&nbsp;111
+</text>
+<text class="txt" selectable decode>
+    test &nbsp;111
+</text>

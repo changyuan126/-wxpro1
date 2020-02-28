@@ -1,0 +1,6 @@
+<tabs aaa="hello word" tabs="{{tabs}}" binditemChange="handleItemChange">
+ <block wx:if="{{tabs[0].isActive}}">aaa</block>
+ <block wx:elif="{{tabs[1].isActive}}">bbb</block>
+ <block wx:elif="{{tabs[2].isActive}}">ccc</block>
+ <block wx:else="{{tabs[3].isActive}}">ddd</block>
+</tabs>

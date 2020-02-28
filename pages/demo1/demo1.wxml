@@ -1,0 +1,28 @@
+<view>{{msg}}</view>
+<view>{{num}}</view>
+<view>{{isShow}}</view>
+<view>{{person.name +" 同学"}}</view>
+<view>{{person.age}}</view>
+<view>{{person.weight}}</view>
+<view data-num="{{num}}">自定义属性</view>
+<view><checkbox checked="{{isChecked}}"></checkbox></view>
+<view>运算</view>
+<view hidden="{{isShow ? true:false}}">hidden</view>
+<view>{{numObj.a+numObj.b}}+{{numObj.b}}+100</view>
+<view wx:if="{{isChecked}}">wx-if</view>
+
+-----条件渲染---------
+<view>
+  <view wx:if="{{true}}">显示</view>
+  <view wx:if="{{false}}">隐藏</view>
+  
+  <view wx:if="{{true}}">1</view>
+  <view wx:elif="{{false}}">2</view>
+  <view wx:else>3</view>
+
+  --hidden使用
+  <view hidden>hidden1</view>
+  <view hidden="{{false}}">hidden2</view>
+ --hidden 不和 display一起使用
+  <view hidden style="display:flex">hidden3</view>
+</view>

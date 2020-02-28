@@ -1,0 +1,14 @@
+swiper{
+    width: 100%;
+    height: calc(100vm * 352 / 1125);
+}
+image{
+    width: 100%;
+}
+
+/*
+使用全局变量样式,样式注释不能使用//方式，需使用 块方式
+*/
+.valColor{
+   color: var(--themeColor);
+}

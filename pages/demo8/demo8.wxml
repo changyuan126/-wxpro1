@@ -1,0 +1,10 @@
+<swiper autoplay interval="2000" circular indicator-dots indicator-color="#0094ff" indicator-active-color="#ff0094">
+    <swiper-item wx:for="{{imageList}}" wx:key="goods_id">
+        <navigator url="/pages/demo6/demo6?url={{item.image_src}}">
+            <image src="{{item.image_src}}" mode="widthFix"/>
+        </navigator>
+    </swiper-item>
+</swiper>
+<view class="valColor">
+   css变量使用
+</view>

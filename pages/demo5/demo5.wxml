@@ -1,0 +1,8 @@
+<swiper autoplay interval="2000" circular indicator-dots indicator-color="#0094ff" indicator-active-color="#ff0094">
+    <swiper-item><image src="https://himg2.huanqiucdn.cn/attachment2010/2020/0213/20200213072036451.jpg" mode="widthFix"/></swiper-item>
+    <swiper-item><image src="https://himg2.huanqiucdn.cn/attachment2010/2020/0213/20200213072054391.jpg" mode="widthFix"/></swiper-item>
+    <swiper-item><image src="https://himg2.huanqiucdn.cn/attachment2010/2020/0213/20200213072036194.jpg" mode="widthFix"/></swiper-item>
+</swiper>
+<view>
+<rich-text nodes="{{html}}"></rich-text>
+</view>

@@ -1,0 +1,16 @@
+<view class="table">
+ <view class="tr bg-w">
+    <view class="th">商品</view>
+    <view class="th">商品名称</view>
+    <view class="th ">价格</view>
+ </view>
+ <block wx:for="{{goodsList}}" wx:key="goods_id">
+  <view class="tr {{index % 2 == 0?'bg-g':''}}">
+      <view class="td">
+        <image mode="widthFix" bindtap="handlePrevewImage" data-url="{{item.goods_small_logo?item.goods_small_logo:'https://ww1.sinaimg.cn/large/007rAy9hgy1g24by9t530j30i20i2glm.jpg'}}" src="{{item.goods_small_logo?item.goods_small_logo:'https://ww1.sinaimg.cn/large/007rAy9hgy1g24by9t530j30i20i2glm.jpg'}}"></image>
+      </view>
+      <view class="td">{{item.goods_name}}</view>
+      <view class="td"><view class="goods_price">{{item.goods_price}}</view></view>
+  </view>
+ </block>
+</view>

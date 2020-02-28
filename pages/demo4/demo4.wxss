@@ -1,0 +1,11 @@
+/**view{
+  height: 200rpx;
+  font-size: 40rpx;
+  background-color: aqua;
+  width: calc(750rpx * 100 / 375);
+}**/
+
+/**
+*导入文件只支持相对路径，不支持绝对路径
+**/
+@import "../../style/common.wxss";

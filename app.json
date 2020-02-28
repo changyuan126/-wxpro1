@@ -1,0 +1,63 @@
+{
+  "pages": [
+    "pages/demo11/demo11",
+    "pages/demo10/demo10",
+    "pages/demo9/demo9",
+    "pages/demo8/demo8",
+    "pages/demo7/demo7",
+    "pages/demo6/demo6",
+    "pages/demo5/demo5",
+    "pages/demo4/demo4",
+    "pages/index/index", 
+    "pages/demo2/demo2",
+    "pages/demo1/demo1",
+    "pages/demo3/demo3"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#0094ff",
+    "navigationBarTitleText": "小程序PRO",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": true,
+    "backgroundColor":"yellow"
+  },
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "icon/_home.png",
+      "selectedIconPath": "icon/home.png"
+    },
+    {
+      "pagePath": "pages/demo1/demo1",
+      "text": "数据绑定",
+      "iconPath": "icon/_img.png",
+      "selectedIconPath": "icon/img.png"
+    },
+    {
+      "pagePath": "pages/demo2/demo2",
+      "text": "列表渲染",
+      "iconPath": "icon/_my.png",
+      "selectedIconPath": "icon/my.png"
+    },
+    {
+      "pagePath": "pages/demo3/demo3",
+      "text": "事件绑定",
+      "iconPath": "icon/_search.png",
+      "selectedIconPath": "icon/search.png"
+    },
+    {
+      "pagePath": "pages/demo4/demo4",
+      "text": "CSS渲染",
+      "iconPath": "icon/_videocamera.png",
+      "selectedIconPath": "icon/videocamera.png"
+    }
+    ],
+    "color":"#0094ff",
+    "selectedColor":"#ff9400",
+    "backgroundColor": "#ffff55",
+    "position":"bottom"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

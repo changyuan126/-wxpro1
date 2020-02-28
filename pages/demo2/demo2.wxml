@@ -1,0 +1,33 @@
+<view>
+  --对象集合
+  <view wx:for="{{list}}" wx:key="id" wx:for-item="item" wx:for-index="index">
+    index:{{index}} -- ID: {{item.id}} -- {{item.name}}
+  </view>
+  <view wx:for="{{list}}" wx:key="id">
+    index:{{index}} -- ID: {{item.id}} -- {{item.name}}
+  </view>
+  --普通数组
+  <view wx:for="{{arrayList}}" wx:key="*this">
+    index:{{index}} -- value: {{item}}
+  </view>
+  --对象属性遍历
+  <view wx:for="{{person}}" wx:key="name">
+    index:{{index}} -- value: {{item}}
+  </view>
+  <view wx:for="{{person}}" wx:key="name" wx:for-item="value" wx:for-index="key">
+    index:{{key}} -- value: {{value}}
+  </view>
+  --嵌套数组
+  <view wx:for="{{list2}}" wx:key="id" wx:for-item="classobj" wx:for-index="index">
+    index:{{index}} -- ID: {{classobj.id}} -- {{classobj.name}}
+    <view wx:for="{{classobj.chirds}}" wx:key="name" wx:for-item="student" wx:for-index="index_stu">
+       stu_index:{{index_stu}}  -- {{student.name}} -- age: {{student.age}}
+    </view>
+  </view>
+   --block使用
+   <view>
+  <block wx:for="{{list}}" wx:key="id" wx:for-item="item" wx:for-index="index">
+    index:{{index}} -- ID: {{item.id}} -- {{item.name}}
+  </block>
+  </view>
+</view>

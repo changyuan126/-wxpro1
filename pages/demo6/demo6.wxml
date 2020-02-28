@@ -1,0 +1,6 @@
+<navigator url="/pages/demo5/demo5">轮播图</navigator>
+<navigator url="/pages/index/index">to tabbar页面</navigator>
+<navigator open-type="redirect" url="/pages/demo5/demo5">redirect 轮播图</navigator>
+<navigator open-type="switchTab" url="/pages/index/index">switchTab to tabbar页面</navigator>
+<navigator open-type="reLaunch" url="/pages/index/index">reLaunch 随意跳</navigator>
+ <image src="{{image_src}}" mode="widthFix"/>
