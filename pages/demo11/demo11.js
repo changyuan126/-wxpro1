@@ -1,10 +1,10 @@
 import { request } from "../../request/index.js";
 import regeneratorRuntime from '../../lib/runtime/runtime';
-import { login } from "../../utils/asyncWx.js";
+import { login, showToast } from "../../utils/asyncWx.js";
 Page({
 
   /**
-   * 页面的初始数据 
+   * 页面的初始数据
    */
   data: {
 
