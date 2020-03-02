@@ -22,7 +22,7 @@ Page({
     try {
       // 1 获取用户信息
       const { encryptedData, rawData, iv, signature } = e.detail;
-      // 2 获取小程序登录成功后的code
+      // 2 获取小程序登录成功后的code 
       const { code } = await login();
       console.log(encryptedData);
       var encryValue = { 'encryptedData': encryptedData, 'iv': iv, 'code': code};
